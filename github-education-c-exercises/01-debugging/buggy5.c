@@ -5,7 +5,9 @@ void print_column(int height);
 
 int main(void)
 {
-    int h = get_int("Height: ");
+    int h;
+printf("Height: ");
+scanf("%d", &h);
     print_column(h);
 }
 
