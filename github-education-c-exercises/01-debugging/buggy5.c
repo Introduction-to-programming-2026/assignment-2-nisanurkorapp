@@ -1,5 +1,4 @@
 // Buggy example for debug50
-#include <cs50.h>
 #include <stdio.h>
 
 void print_column(int height);
