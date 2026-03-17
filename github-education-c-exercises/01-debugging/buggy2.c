@@ -3,6 +3,8 @@
 
 int main(void)
 {
-    name = get_string("What's your name? ")
-    printf("hello, world\n");
+    char name[50];
+    printf("What's your name? ");
+    scanf("%s", name);
+    printf("Hello, %s\n", name);
 }

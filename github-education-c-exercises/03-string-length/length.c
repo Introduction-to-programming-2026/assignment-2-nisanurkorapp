@@ -1,17 +1,27 @@
-#include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
-int string_length(string s);
+int string_length(char s[]);
 
 int main(void)
 {
-    string name = get_string("Name: ");
+    char name[100];
+
+    printf("Name: ");
+    fgets(name, sizeof(name), stdin);
+
     int len = string_length(name);
-    printf("%i\n", len);
+    printf("Length: %d\n", len);
 }
 
-int string_length(string s)
+int string_length(char s[])
 {
-    // TODO: count chars until '\0'
-    return 0;
+    int length = 0;
+
+    while (s[length] != '\0' && s[length] != '\n')
+    {
+        length++;
+    }
+
+    return length;
 }

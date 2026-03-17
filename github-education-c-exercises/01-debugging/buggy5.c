@@ -1,12 +1,13 @@
 // Buggy example for debug50
-#include <cs50.h>
 #include <stdio.h>
 
 void print_column(int height);
 
 int main(void)
 {
-    int h = get_int("Height: ");
+    int h;
+printf("Height: ");
+scanf("%d", &h);
     print_column(h);
 }
 
